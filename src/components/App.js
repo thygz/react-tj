@@ -49,10 +49,11 @@ class App extends React.Component {
         return (
             <div>
                 <Navbar />
+                <Clock/>
                 <SearchBar executeSubmit={this.onSearchSubmit} label="Picture Search" />
                 <ImageList images={this.state.images} />
-                <ArrayList />
-                <Clock/>
+                {/* <ArrayList /> */}
+                
                 {/* <div className="container">
                     <h1>Hello World!</h1>
                     <Welcome name="Daniel Padilla" />
